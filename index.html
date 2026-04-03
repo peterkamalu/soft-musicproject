@@ -13,22 +13,21 @@
 
             <div class="music-player">
                  <nav>
-                    <div class="circle"><i class="fa-solid fa-angle-left"></i></div>
-                    
-                    <div class="circle"><i class="fa-solid fa-bars"></i></div>
+                        <div class="circle"><i class="fa-solid fa-angle-left"></i></div>
+                        <div class="circle"><i class="fa-solid fa-bars"></i></div>
                     
                  </nav>
                  <img src="my-images/download.jpegpics.jpeg" class="img-pics" width="130">
                  <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" >peter kamalu</h1>
                  <p>edsheeran perfect</p>
-                 <audio controls id="song" style="margin: top 8px; ">
-                    <source src=" media.mp3/Ed Sheeran - Perfect  (DawnFoxes.com).mp3">
+                 <audio id="song" style="margin-top: 8px;">
+                    <source src="media.mp3/Ed Sheeran - Perfect  (DawnFoxes.com).mp3">
                  </audio>
                  
                  <input type="range" value="0" id="progress" style="cursor: pointer; transform: scale(1.4);">
                     <div class="controls">
                         <div><i class="fa-solid fa-backward"></i></div>
-                        <div onclick ="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                        <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
                         <div><i class="fa-solid fa-forward"></i></div>
                     </div>
             
@@ -48,7 +47,7 @@
             }
 
             function playPause(){
-                if (ctrlIcon.classlist.contains("fa-pause")){
+                if (ctrlIcon.classList.contains("fa-pause")){
 
                     song.pause();
                     ctrlIcon.classList.remove("fa-pause");
@@ -75,8 +74,6 @@
                     ctrlIcon.classList.remove("fa-play");
                 }
             }
-
-            
 
         
         </script>
